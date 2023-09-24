@@ -1,9 +1,9 @@
 script_name('StateHelper')
 script_authors('Kane')
 script_description('Script for employees of state organizations on the Arizona Role Playing Game')
-script_version('1.6')
+script_version('1.7')
 script_properties('work-in-pause')
-beta_version = 6
+beta_version = 7
 
 local text_err_and_read = {
 	[1] = [[
@@ -10895,7 +10895,7 @@ function hook.onServerMessage(mes_color, mes)
 end
 
 --> Проверка обновлений
-function update_check() 
+function update_check()
 	upd_status = 1
 	local upd_txt_info = 'https://raw.githubusercontent.com/KaneScripter/StateHelper/main/Информация.json'
 	local dir = dirml..'/StateHelper/Для обновления/Информация.json'
